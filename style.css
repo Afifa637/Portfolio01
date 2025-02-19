@@ -324,9 +324,143 @@ span {
     margin: 2rem 0 3rem;
 }
 
+/* Education Section */
+.education{
+    padding: 8rem 15%;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+.education-content h3{
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 3rem;
+}
+
+.timeline {
+    position: relative;
+    margin-top: 3rem;
+}
+
+.timeline-item{
+    position: relative;
+    padding-left: 5rem;
+    margin-bottom: 2rem;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0.8rem;
+    width: 2px;
+    height: 100%;
+    background-color: var(--main-color);
+}
+
+.circle-dot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid var(--main-color);
+    background: var(--main-color);
+    border-radius: 50%;
+    transition: .5s;
+}
+
+.timeline-item:hover .circle-dot {
+    background: var(--bg-color);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .education {
+        padding: 5rem 10%;
+    }
+}
+
+@media (max-width: 992px) {
+    .education {
+        padding: 6rem 15%;
+    }
+
+    .timeline-container {
+        gap: 3rem;
+    }
+
+    .timeline-item {
+        padding-left: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .education {
+        padding: 5rem 10%;
+    }
+
+    .timeline-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .timeline {
+        margin-top: 2rem;
+        width: 90%;
+    }
+
+    .timeline-item {
+        padding-left: 3rem;
+    }
+
+    .timeline-item::before {
+        left: 0.5rem;
+    }
+
+    .circle-dot {
+        width: 1.8rem;
+        height: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .education {
+        padding: 4rem 5%;
+    }
+
+    .timeline {
+        width: 100%;
+    }
+
+    .timeline-item {
+        padding-left: 2.5rem;
+    }
+
+    .timeline-item::before {
+        left: 0.4rem;
+    }
+
+    .circle-dot {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+}
+
 /* Skills Section Design */
 .skills {
-    padding: 6rem 8%; /* Adds padding to ensure content fits well on all screens */
+    padding: 6rem 8%; 
     text-align: center;
 }
 
