@@ -47,7 +47,7 @@ ScrollReveal({
  });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .project-box, .skills-container .contact-form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img, .services-container, .project-box, .skills-container, .contact-form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
 
@@ -62,3 +62,44 @@ document.addEventListener("DOMContentLoaded", function () {
         loop: true,
     });
 });
+
+// Ensure MixItUp is properly initialized
+let mixerProject = mixitup('.project-container', {
+    selectors: {    
+        target : '.project-card'
+    },
+    animation: {
+        duration: 300
+    }
+});
+
+//link active work
+const linkWork = document.querySelectorAll('.project-item');
+
+function activeWork() {
+        linkWork.forEach(l => l.classList.remove('active-work'));
+        this.classList.add('active-work');
+}
+
+linkWork.forEach(l => l.addEventListener('click', activeWork));
+
+//project popup
+document.addEventListener('click', (e) => {
+    if(e.target.classList.contains('project-button')) {
+        toggleProjectPopup();
+        projectItemDetails(e.target.parentElement);
+    }
+})
+
+function toggleProjectPopup() {
+    document.querySelector('.project-popup').classList.toggle('open'); 
+}
+
+document.querySelector('.project-popup-close').addEventListener('click', toggleProjectPopup);
+
+function projectItemDetails(projectItem) {
+    document.querySelector('.pp-thumbnail img').src = projectItem.querySelector('.project-img').src;
+    document.querySelector('.project-popup-subtitles span').innerHTML = projectItem.querySelector('.project-title').innerHTML;
+    document.querySelector('.project-popup-body').innerHTML = projectItem.querySelector('.project-item-details').innerHTML;
+}   
+        
