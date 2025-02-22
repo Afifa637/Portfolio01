@@ -13,7 +13,7 @@
 <body>
     <!-- Header Section -->
      <header class="header">
-        <a href="#" class="logo">portfolio</a>
+        <a href="#" class="logo">Afifa</a>
         <i class="fa-solid fa-bars" id = "menu-icon"></i>
         
         <nav class="navbar">
@@ -21,8 +21,9 @@
                 <a href="#about">About</a>
                 <a href="#education">Education</a>
                 <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
+                <a href="#project">Projects</a>
                 <a href="#contact">Contact</a>
+                <i class="fa-solid fa-gear settings" id="switcher-toggle"></i>
         </nav>
      </header>
 
@@ -63,7 +64,7 @@
     </section>
 
     <!-- Education Section -->
-    <section class = "education">
+    <section class = "education" id ="education">
         <h2 class="heading"><i class="fa-solid fa-graduation-cap"></i> My <span>Education</span></h2>
         <div class = "education-container">
             <div class = "timeline">
@@ -95,32 +96,41 @@
 
     </section>
 
-    <!-- Skills Section -->
-    <section class="skills" id="skills">
-        <h2 class="heading">My <span>Skills</span></h2>
-        <div class="skills-container">
-            <div class="skill-box">
-                <i class="fa-solid fa-code"></i>
-                <h3>Web Developement</h3>
-                <p>Proficient in HTML, CSS, JavaScript. I create dynamic and responsive websites that deliver great user experiences.</p>
-                <a href="#" class="btn">Read more</a>
-            </div>
-
-            <div class="skill-box">
-                <i class="fa-brands fa-android"></i>
-                <h3>App Developement</h3>
-                <p>Experienced in developing Android applications using Java, Kotlin and Dart, ensuring seamless performance, beautiful design, and intuitive navigation. </p>
-                <a href="#" class="btn">Read more</a>
-            </div>
-
-            <div class="skill-box">
-                <i class="fa-solid fa-palette"></i>
-                <h3>UI/UX Designing</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quidem.</p>
-                <a href="#" class="btn">Read more</a>
-            </div>
+ <!-- Skills Section -->
+<section class="skills" id="skills">
+    <h2 class="heading">My <span>Skills</span></h2>
+    <div class="skills-container">
+        <div class="skill-box" data-skill="web">
+            <i class="fa-solid fa-code"></i>
+            <h3>Web Development</h3>
+            <p>Proficient in HTML, CSS, JavaScript. I create dynamic and responsive websites that deliver great user experiences.</p>
+            <a href="#" class="btn read-more">Read more</a>
         </div>
-    </section>
+
+        <div class="skill-box" data-skill="app">
+            <i class="fa-brands fa-android"></i>
+            <h3>App Development</h3>
+            <p>Experienced in developing Android applications using Java, Kotlin, and Dart, ensuring seamless performance, beautiful design, and intuitive navigation.</p>
+            <a href="#" class="btn read-more">Read more</a>
+        </div>
+
+        <div class="skill-box" data-skill="uiux">
+            <i class="fa-solid fa-palette"></i>
+            <h3>UI/UX Designing</h3>
+            <p>I design intuitive and aesthetically pleasing interfaces using tools like Figma, Adobe XD, and Sketch.</p>
+            <a href="#" class="btn read-more">Read more</a>
+        </div>
+    </div>
+</section>
+
+<!-- Popup Box -->
+<div class="popup-box" id="popup">
+    <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h3 id="popup-title"></h3>
+        <p id="popup-text"></p>
+    </div>
+</div>
 
     <!-- Projects Section -->
     <section class="project section" id="project">
@@ -279,6 +289,50 @@
             <a href = "#home"><i class="fa-solid fa-angle-up"></i></a>
         </div>
     </footer>
+
+   <!-- Style Switcher -->
+<div class="style-switcher" id="style-switcher">
+    <h2 class="style-switcher-title">Style Switcher</h2>
+
+    <!-- Color Theme Section -->
+    <div class="style-switcher-item">
+        <h3 class="style-switcher-subtitle">Color</h3>
+        <div class="style-switcher-colors">
+            <span class="style-switcher-color" style="--hue: 195">
+                <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="style-switcher-color active-color" style="--hue: 355">
+                <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="style-switcher-color" style="--hue: 255">
+                <i class="fa-solid fa-check"></i>
+            </span>
+            <span class="style-switcher-color" style="--hue: 65">
+                <i class="fa-solid fa-check"></i>
+            </span>
+        </div>
+    </div>
+
+    <!-- Theme Switcher Section -->
+    <div class="style-switcher-item">
+        <h3 class="style-switcher-subtitle">Theme</h3>
+        <div class="style-switcher-themes">
+            <div class="style-switcher-theme">
+                <input type="radio" class="style-switcher-input" name="body-theme" value="light" id="light-theme" checked />
+                <label for="light-theme" class="style-switcher-label">Light</label>
+            </div>
+            <div class="style-switcher-theme">
+                <input type="radio" class="style-switcher-input" name="body-theme" value="dark" id="dark-theme" />
+                <label for="dark-theme" class="style-switcher-label">Dark</label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Close Button -->
+    <div class="style-switcher-close" id="switcher-close">
+        <i class="fa-solid fa-xmark"></i>
+    </div>
+</div>
 
     <!-- Mixit up filter -->
     <script src="https://cdn.jsdelivr.net/npm/mixitup@3"></script>
