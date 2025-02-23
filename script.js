@@ -47,9 +47,9 @@ ScrollReveal({
  });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .services-container, .project-box, .skills-container, .contact-form', { origin: 'bottom' });
-ScrollReveal().reveal('.home-content h1, .about-img', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+ScrollReveal().reveal('.home-img, .services-container, .project-box, .skills-container, .contact-form, .education-container', { origin: 'bottom' });
+ScrollReveal().reveal('.home-content h1, .about-img, .contact-content', { origin: 'left' });
+ScrollReveal().reveal('.home-content p, .about-content, .home-img-container', { origin: 'right' });
 
 // Typed js
 

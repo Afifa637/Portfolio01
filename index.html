@@ -1,338 +1,500 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Font -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- CSS Link -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Responsive personal portfolio | Afifa Sultana</title>
-</head>
-<body>
+  </head>
+  <body>
     <!-- Header Section -->
-     <header class="header">
-        <a href="#" class="logo">Afifa</a>
-        <i class="fa-solid fa-bars" id = "menu-icon"></i>
-        
-        <nav class="navbar">
-                <a href="#home" class="active">Home</a>
-                <a href="#about">About</a>
-                <a href="#education">Education</a>
-                <a href="#skills">Skills</a>
-                <a href="#project">Projects</a>
-                <a href="#contact">Contact</a>
-                <i class="fa-solid fa-gear settings" id="switcher-toggle"></i>
-        </nav>
-     </header>
+    <header class="header">
+      <a href="#" class="logo">Afifa</a>
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+      <nav class="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#project">Projects</a>
+        <a href="#contact">Contact</a>
+        <i class="fa-solid fa-gear settings" id="switcher-toggle"></i>
+      </nav>
+    </header>
 
     <!-- Home Section -->
     <section class="home" id="home">
-         <div class="home-content">
-            <h3>Hello, I'm</h3>
-            <h1>Afifa Sultana</h1>
-            <h3>I'm a <span class="multiple-text"></span></h3>
-            <p>A passionate developer specializing in web and mobile applications. 
-                <br>I love solving real-world problems with technology and creating user-friendly applications.</p>
-            <div class="social-media">
-                <a href="https://www.facebook.com/share/1ECBdwaepb/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://join.skype.com/invite/qIoH5oRmoO2e" target="_blank"><i class="fab fa-skype"></i></a>
-                <a href="https://www.linkedin.com/in/afifa-sultana-346a13256/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://github.com/Afifa637?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-            <a href="#" target="_blank" class="download-btn">Download CV</a>
+      <div class="home-content">
+        <h3>Hello, I'm</h3>
+        <h1><span>Afifa</span> Sultana</h1>
+        <h3>I'm a <span class="multiple-text"></span></h3>
+        <p>
+          A passionate developer specializing in web and mobile applications.
+          <br />I love solving real-world problems with technology and creating
+          user-friendly applications.
+        </p>
+        <a href="#" target="_blank" class="download-btn btn">Download CV</a>
+      </div>
+
+      <div class="home-img-container">
+        <div id="home-img">
+          <img id="img-prof" src="profile1.png" alt="profile" />
         </div>
 
-        <div id="home-img">
-            <img id = "img-prof" src="profile1.png" alt="profile">
+        <!-- Social Media Icons -->
+        <div class="social-media">
+          <a
+            href="https://www.facebook.com/share/1ECBdwaepb/"
+            target="_blank"
+            class="social-link fb"
+            ><i class="fab fa-facebook"></i
+          ></a>
+          <a
+            href="https://join.skype.com/invite/qIoH5oRmoO2e"
+            target="_blank"
+            class="social-link skype"
+            ><i class="fab fa-skype"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/afifa-sultana-346a13256/"
+            target="_blank"
+            class="social-link linkedin"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://github.com/Afifa637?tab=repositories"
+            target="_blank"
+            class="social-link github"
+            ><i class="fab fa-github"></i
+          ></a>
         </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section class="about" id="about">
-        <div class="about-img">
-            <img src="profile1.png" alt="profile picture">
-        </div>
+      <div class="about-img">
+        <img src="profile1.png" alt="profile picture" />
+      </div>
 
-        <div class="about-content">
-            <h2 class="heading"> About <span >Me</span></h2>
-            <h3>Aspirant Software Developer</h3>
-            <p>As a dedicated developer, I enjoy bringing ideas to life through technology. My expertise lies in building intuitive user interfaces, responsive web applications, and high-performance mobile apps. I am continuously learning and exploring new technologies to improve my craft.</p>
-            <a href="#" class="btn">Read more</a>   
-        </div>
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <h3>Aspirant Software Developer</h3>
+        <p>
+          As a dedicated developer, I enjoy bringing ideas to life through
+          technology. My expertise lies in building intuitive user interfaces,
+          responsive web applications, and high-performance mobile apps. I am
+          continuously learning and exploring new technologies to improve my
+          craft.
+        </p>
+        <a href="#" class="btn">Read more</a>
+      </div>
     </section>
 
     <!-- Education Section -->
-    <section class = "education" id ="education">
-        <h2 class="heading"><i class="fa-solid fa-graduation-cap"></i> My <span>Education</span></h2>
-        <div class = "education-container">
-            <div class = "timeline">
-                <div class = "timeline-item">
-                    <div class ="circle-dot"> </div>
-                    <h3 class="timeline-title">Bachelor of Science(B.Sc.) in Computer Science and Engineering</h3>
-                    <p class="timeline-text">Khulna University of Engineering and Technology</p>
-                    <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i>
-                        2023 - Ongoing</span>
-                </div>
+    <section class="education" id="education">
+      <h2 class="heading">
+        <i class="fa-solid fa-graduation-cap"></i> My <span>Education</span>
+      </h2>
+      <div class="education-container">
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="circle-dot"></div>
+            <h3 class="timeline-title">
+              Bachelor of Science(B.Sc.) in Computer Science and Engineering
+            </h3>
+            <p class="timeline-text">
+              Khulna University of Engineering and Technology
+            </p>
+            <span class="timeline-date"
+              ><i class="fa-solid fa-calendar-days"></i> 2023 - Ongoing</span
+            >
+          </div>
 
-                <div class = "timeline-item">
-                    <div class ="circle-dot"> </div>
-                    <h3 class="timeline-title">Higher Secondary School Certificate</h3>
-                    <p class="timeline-text">Viqarunnisa Noon School and College</p>
-                    <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i>
-                        2019-2021</span>
-                </div>
+          <div class="timeline-item">
+            <div class="circle-dot"></div>
+            <h3 class="timeline-title">Higher Secondary School Certificate</h3>
+            <p class="timeline-text">Viqarunnisa Noon School and College</p>
+            <span class="timeline-date"
+              ><i class="fa-solid fa-calendar-days"></i> 2019-2021</span
+            >
+          </div>
 
-                <div class = "timeline-item">
-                    <div class ="circle-dot"> </div>
-                    <h3 class="timeline-title">Secondary School Certificate</h3>
-                    <p class="timeline-text">Viqarunnisa Noon School and College</p>
-                    <span class="timeline-date"><i class="fa-solid fa-calendar-days"></i>
-                        2014-2019</span>
-                </div>
-            </div>
+          <div class="timeline-item">
+            <div class="circle-dot"></div>
+            <h3 class="timeline-title">Secondary School Certificate</h3>
+            <p class="timeline-text">Viqarunnisa Noon School and College</p>
+            <span class="timeline-date"
+              ><i class="fa-solid fa-calendar-days"></i> 2014-2019</span
+            >
+          </div>
         </div>
-
+      </div>
     </section>
 
- <!-- Skills Section -->
-<section class="skills" id="skills">
-    <h2 class="heading">My <span>Skills</span></h2>
-    <div class="skills-container">
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+      <h2 class="heading">My <span>Skills</span></h2>
+      <div class="skills-container">
         <div class="skill-box" data-skill="web">
-            <i class="fa-solid fa-code"></i>
-            <h3>Web Development</h3>
-            <p>Proficient in HTML, CSS, JavaScript. I create dynamic and responsive websites that deliver great user experiences.</p>
-            <a href="#" class="btn read-more">Read more</a>
+          <i class="fa-solid fa-code"></i>
+          <h3>Web Development</h3>
+          <p>
+            Proficient in HTML, CSS, JavaScript. I create dynamic and responsive
+            websites that deliver great user experiences.
+          </p>
+          <a href="#" class="btn read-more">Read more</a>
         </div>
 
         <div class="skill-box" data-skill="app">
-            <i class="fa-brands fa-android"></i>
-            <h3>App Development</h3>
-            <p>Experienced in developing Android applications using Java, Kotlin, and Dart, ensuring seamless performance, beautiful design, and intuitive navigation.</p>
-            <a href="#" class="btn read-more">Read more</a>
+          <i class="fa-brands fa-android"></i>
+          <h3>App Development</h3>
+          <p>
+            Experienced in developing Android applications using Java, Kotlin,
+            and Dart, ensuring seamless performance, beautiful design, and
+            intuitive navigation.
+          </p>
+          <a href="#" class="btn read-more">Read more</a>
         </div>
 
         <div class="skill-box" data-skill="uiux">
-            <i class="fa-solid fa-palette"></i>
-            <h3>UI/UX Designing</h3>
-            <p>I design intuitive and aesthetically pleasing interfaces using tools like Figma, Adobe XD, and Sketch.</p>
-            <a href="#" class="btn read-more">Read more</a>
+          <i class="fa-solid fa-palette"></i>
+          <h3>UI/UX Designing</h3>
+          <p>
+            I design intuitive and aesthetically pleasing interfaces using tools
+            like Figma, Adobe XD, and Sketch.
+          </p>
+          <a href="#" class="btn read-more">Read more</a>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<!-- Popup Box -->
-<div class="popup-box" id="popup">
-    <div class="popup-content">
+    <!-- Popup Box -->
+    <div class="popup-box" id="popup">
+      <div class="popup-content">
         <span class="close-btn">&times;</span>
         <h3 id="popup-title"></h3>
         <p id="popup-text"></p>
+      </div>
     </div>
-</div>
 
     <!-- Projects Section -->
     <section class="project section" id="project">
-        <h2 class="heading section-title">My <span>Projects</span></h2>
-        <div class="project-filters">
-            <span class="project-item active-project btn" data-filter="*">All</span>
-            <span class="project-item btn" data-filter=".web">Web</span>
-            <span class="project-item btn" data-filter=".app">App</span>
-            <span class="project-item btn" data-filter=".design">Design</span>
+      <h2 class="heading section-title">
+        <i class="fa-solid fa-user-gear"></i> My <span>Projects</span>
+      </h2>
+      <div class="project-filters">
+        <span class="project-item active-project btn" data-filter="*">All</span>
+        <span class="project-item btn" data-filter=".web">Web</span>
+        <span class="project-item btn" data-filter=".app">App</span>
+        <span class="project-item btn" data-filter=".design">Design</span>
+      </div>
+
+      <div class="project-container container grid">
+        <div class="project-card mix web">
+          <img src="project1.png" alt="project1" class="project-img" />
+          <h3 class="project-title">Portfolio</h3>
+          <span class="btn project-button"
+            >Demo
+            <i class="uil uil-arrow-right project-button-icon"></i>
+          </span>
+          <div class="portfolio-item-details">
+            <h3 class="details-title">The services provided for design</h3>
+            <p class="details-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              recusandae commodi similique harum facere! Hic quis tempora
+              soluta? Dolorum illo architecto dignissimos optio eaque saepe
+              minima cumque quia odit enim?
+            </p>
+            <ul class="details-info">
+              <li>Created - <span>4 dec, 2020</span></li>
+              <li>Skills - <span>HTML, CSS, JavaScript</span></li>
+              <li>Role - <span>Frontend</span></li>
+              <li>
+                View - <span><a href="#">www.domain.com</a></span>
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="project-container container grid">
-
-            <div class="project-card mix web">
-                <img src="project1.png" alt="project1" class="project-img">
-                <h3 class="project-title">Portfolio</h3>
-                <span class="btn project-button">Demo
-                    <i class="uil uil-arrow-right project-button-icon"></i>
-                </span>
-                <div class="portfolio-item-details">
-                    <h3 class="details-title">The services provided for design</h3>
-                    <p class="details-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore recusandae commodi similique harum facere! Hic quis tempora soluta? Dolorum illo architecto dignissimos optio eaque saepe minima cumque quia odit enim?</p>
-                    <ul class="details-info">
-                        <li>Created - <span>4 dec, 2020</span></li>
-                        <li>Skills - <span>HTML, CSS, JavaScript</span></li>
-                        <li>Role - <span>Frontend</span></li>
-                        <li>View - <span><a href ="#">www.domain.com</a></span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="project-card mix app">
-                <img src="project1.png" alt="project1" class="project-img">
-                <h3 class="project-title">Green Grocer</h3>
-                <span class="btn project-button">Demo
-                    <i class="uil uil-arrow-right project-button-icon"></i>
-                </span>
-                <div class="portfolio-item-details">
-                    <h3 class="details-title">Mobile app landing sdedfsf</h3>
-                    <p class="details-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore recusandae commodi similique harum facere! Hic quis tempora soluta? Dolorum illo architecto dignissimos optio eaque saepe minima cumque quia odit enim?</p>
-                    <ul class="details-info">
-                        <li>Created - <span>4 dec, 2020</span></li>
-                        <li>Skills - <span>HTML, CSS, JavaScript</span></li>
-                        <li>Role - <span>Frontend</span></li>
-                        <li>View - <span><a href ="#">www.domain.com</a></span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="project-card mix app">
-                <img src="project1.png" alt="project1" class="project-img">
-                <h3 class="project-title">Coffee Shop</h3>
-                <span class="btn project-button">Demo
-                    <i class="uil uil-arrow-right project-button-icon"></i>
-                </span>
-                <div class="portfolio-item-details">
-                    <h3 class="details-title">Mobile app landing sdedfsf</h3>
-                    <p class="details-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore recusandae commodi similique harum facere! Hic quis tempora soluta? Dolorum illo architecto dignissimos optio eaque saepe minima cumque quia odit enim?</p>
-                    <ul class="details-info">
-                        <li>Created - <span>4 dec, 2020</span></li>
-                        <li>Skills - <span>HTML, CSS, JavaScript</span></li>
-                        <li>Role - <span>Frontend</span></li>
-                        <li>View - <span><a href ="#">www.domain.com</a></span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="project-card mix web">
-                <img src="project1.png" alt="project1" class="project-img">
-                <h3 class="project-title">Web Developement</h3>
-                <span class="btn project-button">Demo
-                    <i class="uil uil-arrow-right project-button-icon"></i>
-                </span>
-                <div class="portfolio-item-details">
-                    <h3 class="details-title">Web developer project</h3>
-                    <p class="details-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore recusandae commodi similique harum facere! Hic quis tempora soluta? Dolorum illo architecto dignissimos optio eaque saepe minima cumque quia odit enim?</p>
-                    <ul class="details-info">
-                        <li>Created - <span>4 dec, 2020</span></li>
-                        <li>Skills - <span>HTML, CSS, JavaScript</span></li>
-                        <li>Role - <span>Frontend</span></li>
-                        <li>View - <span><a href ="#">www.domain.com</a></span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="project-card mix design">
-                <img src="project1.png" alt="project1" class="project-img">
-                <h3 class="project-title">Travel Agency</h3>
-                <span class="btn project-button">Demo
-                    <i class="uil uil-arrow-right project-button-icon"></i>
-                </span>
-                <div class="portfolio-item-details">
-                    <h3 class="details-title">Travde c++f dfsdgdgd</h3>
-                    <p class="details-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore recusandae commodi similique harum facere! Hic quis tempora soluta? Dolorum illo architecto dignissimos optio eaque saepe minima cumque quia odit enim?</p>
-                    <ul class="details-info">
-                        <li>Created - <span>4 dec, 2020</span></li>
-                        <li>Skills - <span>HTML, CSS, JavaScript</span></li>
-                        <li>Role - <span>Frontend</span></li>
-                        <li>View - <span><a href ="#">www.domain.com</a></span></li>
-                    </ul>
-                </div>
-            </div>
+        <div class="project-card mix app">
+          <img src="project1.png" alt="project1" class="project-img" />
+          <h3 class="project-title">Green Grocer</h3>
+          <span class="btn project-button"
+            >Demo
+            <i class="uil uil-arrow-right project-button-icon"></i>
+          </span>
+          <div class="portfolio-item-details">
+            <h3 class="details-title">Mobile app landing sdedfsf</h3>
+            <p class="details-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              recusandae commodi similique harum facere! Hic quis tempora
+              soluta? Dolorum illo architecto dignissimos optio eaque saepe
+              minima cumque quia odit enim?
+            </p>
+            <ul class="details-info">
+              <li>Created - <span>4 dec, 2020</span></li>
+              <li>Skills - <span>HTML, CSS, JavaScript</span></li>
+              <li>Role - <span>Frontend</span></li>
+              <li>
+                View - <span><a href="#">www.domain.com</a></span>
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <div class="project-card mix app">
+          <img src="project1.png" alt="project1" class="project-img" />
+          <h3 class="project-title">Coffee Shop</h3>
+          <span class="btn project-button"
+            >Demo
+            <i class="uil uil-arrow-right project-button-icon"></i>
+          </span>
+          <div class="portfolio-item-details">
+            <h3 class="details-title">Mobile app landing sdedfsf</h3>
+            <p class="details-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              recusandae commodi similique harum facere! Hic quis tempora
+              soluta? Dolorum illo architecto dignissimos optio eaque saepe
+              minima cumque quia odit enim?
+            </p>
+            <ul class="details-info">
+              <li>Created - <span>4 dec, 2020</span></li>
+              <li>Skills - <span>HTML, CSS, JavaScript</span></li>
+              <li>Role - <span>Frontend</span></li>
+              <li>
+                View - <span><a href="#">www.domain.com</a></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-card mix web">
+          <img src="project1.png" alt="project1" class="project-img" />
+          <h3 class="project-title">Web Developement</h3>
+          <span class="btn project-button"
+            >Demo
+            <i class="uil uil-arrow-right project-button-icon"></i>
+          </span>
+          <div class="portfolio-item-details">
+            <h3 class="details-title">Web developer project</h3>
+            <p class="details-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              recusandae commodi similique harum facere! Hic quis tempora
+              soluta? Dolorum illo architecto dignissimos optio eaque saepe
+              minima cumque quia odit enim?
+            </p>
+            <ul class="details-info">
+              <li>Created - <span>4 dec, 2020</span></li>
+              <li>Skills - <span>HTML, CSS, JavaScript</span></li>
+              <li>Role - <span>Frontend</span></li>
+              <li>
+                View - <span><a href="#">www.domain.com</a></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="project-card mix design">
+          <img src="project1.png" alt="project1" class="project-img" />
+          <h3 class="project-title">Travel Agency</h3>
+          <span class="btn project-button"
+            >Demo
+            <i class="uil uil-arrow-right project-button-icon"></i>
+          </span>
+          <div class="portfolio-item-details">
+            <h3 class="details-title">Travde c++f dfsdgdgd</h3>
+            <p class="details-description">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+              recusandae commodi similique harum facere! Hic quis tempora
+              soluta? Dolorum illo architecto dignissimos optio eaque saepe
+              minima cumque quia odit enim?
+            </p>
+            <ul class="details-info">
+              <li>Created - <span>4 dec, 2020</span></li>
+              <li>Skills - <span>HTML, CSS, JavaScript</span></li>
+              <li>Role - <span>Frontend</span></li>
+              <li>
+                View - <span><a href="#">www.domain.com</a></span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Project Pop up -->
-     <div class="project-popup">
-        <div class="project-popup-inner">
-            <div class="project-popup-content grid">
-                <span class="project-popup-close"><i class="fa-solid fa-xmark"></i></span>
-                <div class="pp-thumbnail">
-                    <img src="project1.png" alt="project1" class="project-popup-img">
-                </div>
-                <div class="project-popup-info">
-                    <div class="project-popup-subtitle">Featured - <span>Design</span></div>
-                    <div class="project-popup-body">
-                        <h3 class="details-title">The services provided for design</h3>
-                    <p class="details-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore recusandae commodi similique harum facere! Hic quis tempora soluta? Dolorum illo architecto dignissimos optio eaque saepe minima cumque quia odit enim?</p>
-                    <ul class="details-info">
-                        <li>Created - <span>4 dec, 2020</span></li>
-                        <li>Skills - <span>HTML, CSS, JavaScript</span></li>
-                        <li>Role - <span>Frontend</span></li>
-                        <li>View - <span><a href ="#">www.domain.com</a></span></li>
-                    </ul>
-                    </div>
-                </div>
+    <div class="project-popup">
+      <div class="project-popup-inner">
+        <div class="project-popup-content grid">
+          <span class="project-popup-close"
+            ><i class="fa-solid fa-xmark"></i
+          ></span>
+          <div class="pp-thumbnail">
+            <img src="project1.png" alt="project1" class="project-popup-img" />
+          </div>
+          <div class="project-popup-info">
+            <div class="project-popup-subtitle">
+              Featured - <span>Design</span>
             </div>
+            <div class="project-popup-body">
+              <h3 class="details-title">The services provided for design</h3>
+              <p class="details-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                recusandae commodi similique harum facere! Hic quis tempora
+                soluta? Dolorum illo architecto dignissimos optio eaque saepe
+                minima cumque quia odit enim?
+              </p>
+              <ul class="details-info">
+                <li>Created - <span>4 dec, 2020</span></li>
+                <li>Skills - <span>HTML, CSS, JavaScript</span></li>
+                <li>Role - <span>Frontend</span></li>
+                <li>
+                  View - <span><a href="#">www.domain.com</a></span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-     </div>
+      </div>
+    </div>
 
     <!-- Contact Section -->
     <section class="contact" id="contact">
-        <h2 class="heading">Contact <span>Me</span></h2>
-        
-        <form action="#" class="contact-form"> 
+      <h2 class="heading"><i class="fa-regular fa-address-book"></i> Contact <span>Me</span></h2>
+
+      <div class="contact-container container grid">
+        <div class="contact-content">
+          <div class="contact-card">
+            <span class="contact-icon">
+                <i class="fa-solid fa-map-location-dot"></i>
+            </span>
+            <div class = "contact-info">
+                <h3 class="contact-title">Address</h3>
+                <p class="contact-data">Rokeya Hall, KUET, Khulna</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">
+                <i class="fa-solid fa-envelope"></i>
+            </span>
+            <div class = "contact-info">
+                <h3 class="contact-title">Email</h3>
+                <p class="contact-data">afifasultana637@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <span class="contact-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+            </span>
+            <div class = "contact-info">
+                <h3 class="contact-title">WhatsApp</h3>
+                <p class="contact-data">01625738164</p>
+            </div>
+          </div>
+
+        </div>
+        <form action="#" class="contact-form">
             <div class="input-box">
-                <input type="text" placeholder="Enter your name" required>
-                <input type="email" placeholder="Email Address" required>
+              <input type="text" placeholder="Enter your name" required />
+              <input type="email" placeholder="Email Address" required />
             </div>
             <div class="input-box">
-                <input type="tel" placeholder="Mobile Number" required>
-                <input type="text" placeholder="Email Subject" required>
+              <input type="tel" placeholder="Mobile Number" required />
+              <input type="text" placeholder="Email Subject" required />
             </div>
-            <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-            <input type="submit" value="Send Message" class="btn">
+            <textarea
+              name="message"
+              cols="30"
+              rows="10"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <input type="submit" value="Send Message" class="btn" />
         </form>
+      </div>
     </section>
 
     <!-- Footer Section -->
     <footer class="footer">
-        <div class="footer-text">
-            <p>Copyright &copy; 2024 Afifa Sultana | All rights reserved.</p>
-        </div>
-        
-        <div class="footer-iconTop">
-            <a href = "#home"><i class="fa-solid fa-angle-up"></i></a>
-        </div>
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 Afifa Sultana | All rights reserved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="fa-solid fa-angle-up"></i></a>
+      </div>
     </footer>
 
-   <!-- Style Switcher -->
-<div class="style-switcher" id="style-switcher">
-    <h2 class="style-switcher-title">Style Switcher</h2>
+    <!-- Style Switcher -->
+    <div class="style-switcher" id="style-switcher">
+      <h2 class="style-switcher-title">Style Switcher</h2>
 
-    <!-- Color Theme Section -->
-    <div class="style-switcher-item">
+      <!-- Color Theme Section -->
+      <div class="style-switcher-item">
         <h3 class="style-switcher-subtitle">Color</h3>
         <div class="style-switcher-colors">
-            <span class="style-switcher-color" style="--hue: 195">
-                <i class="fa-solid fa-check"></i>
-            </span>
-            <span class="style-switcher-color active-color" style="--hue: 355">
-                <i class="fa-solid fa-check"></i>
-            </span>
-            <span class="style-switcher-color" style="--hue: 255">
-                <i class="fa-solid fa-check"></i>
-            </span>
-            <span class="style-switcher-color" style="--hue: 65">
-                <i class="fa-solid fa-check"></i>
-            </span>
+          <span class="style-switcher-color" style="--hue: 195">
+            <i class="fa-solid fa-check"></i>
+          </span>
+          <span class="style-switcher-color active-color" style="--hue: 355">
+            <i class="fa-solid fa-check"></i>
+          </span>
+          <span class="style-switcher-color" style="--hue: 255">
+            <i class="fa-solid fa-check"></i>
+          </span>
+          <span class="style-switcher-color" style="--hue: 65">
+            <i class="fa-solid fa-check"></i>
+          </span>
         </div>
-    </div>
+      </div>
 
-    <!-- Theme Switcher Section -->
-    <div class="style-switcher-item">
+      <!-- Theme Switcher Section -->
+      <div class="style-switcher-item">
         <h3 class="style-switcher-subtitle">Theme</h3>
         <div class="style-switcher-themes">
-            <div class="style-switcher-theme">
-                <input type="radio" class="style-switcher-input" name="body-theme" value="light" id="light-theme" checked />
-                <label for="light-theme" class="style-switcher-label">Light</label>
-            </div>
-            <div class="style-switcher-theme">
-                <input type="radio" class="style-switcher-input" name="body-theme" value="dark" id="dark-theme" />
-                <label for="dark-theme" class="style-switcher-label">Dark</label>
-            </div>
+          <div class="style-switcher-theme">
+            <input
+              type="radio"
+              class="style-switcher-input"
+              name="body-theme"
+              value="light"
+              id="light-theme"
+              checked
+            />
+            <label for="light-theme" class="style-switcher-label">Light</label>
+          </div>
+          <div class="style-switcher-theme">
+            <input
+              type="radio"
+              class="style-switcher-input"
+              name="body-theme"
+              value="dark"
+              id="dark-theme"
+            />
+            <label for="dark-theme" class="style-switcher-label">Dark</label>
+          </div>
         </div>
-    </div>
+      </div>
 
-    <!-- Close Button -->
-    <div class="style-switcher-close" id="switcher-close">
+      <!-- Close Button -->
+      <div class="style-switcher-close" id="switcher-close">
         <i class="fa-solid fa-xmark"></i>
+      </div>
     </div>
-</div>
 
     <!-- Mixit up filter -->
     <script src="https://cdn.jsdelivr.net/npm/mixitup@3"></script>
@@ -345,5 +507,5 @@
 
     <!-- JavaScript Link -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
